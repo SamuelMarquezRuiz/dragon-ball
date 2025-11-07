@@ -30,17 +30,7 @@
       ]
     },
     "description": {
-      "type": "string"
-    },
-    "image": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "type": "text"
     },
     "race": {
       "type": "enumeration",
@@ -77,6 +67,16 @@
       "relation": "manyToOne",
       "target": "api::planet.planet",
       "inversedBy": "characters"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

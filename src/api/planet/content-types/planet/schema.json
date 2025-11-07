@@ -16,6 +16,25 @@
       "relation": "oneToMany",
       "target": "api::character.character",
       "mappedBy": "planet"
+    },
+    "name": {
+      "type": "string"
+    },
+    "isDestroyed": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
